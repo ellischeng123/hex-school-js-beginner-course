@@ -130,6 +130,12 @@ form p input:first-of-type {
   position: absolute;
   right: -36px;
 }
+.result .delete:hover, .result .delete:focus {
+  color: #b1b1b1;
+}
+.result .delete:active {
+  color: #696969;
+}
 
 .result h3, .item h4, .item p, .date {
   font-family: sans-serif;
