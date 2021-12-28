@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/bmi-calculator.css">
+</head>
+<body>
+    <main>
+        <div class="input">
+            <div class="container">
+                <img src="./assets/BMICLogo.png" alt="BMI Calculator logo">
+                <form action="#" id="myform" method="post">
+                    <p>
+                        <label for="height">身高 cm</label>
+                        <input id="height" name="height" type="text" placeholder="請輸入身高">
+                    </p>
+                    <p>
+                        <label for="weight">體重 cm</label>
+                        <input id="weight" name="weight" type="text" placeholder="請輸入體重">                        
+                    </p>
+                </form>
+                <div class="submit-frame">
+                    <button class="submit" type="submit" form="myform">看結果</button>
+                    <div class="title"></div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="result-board">
+            <h2>BMI 紀錄</h2>
+            <div class="results">
+            </div>
+            <button class="clear">清除所有紀錄</button>
+        </div>
+
+    </main>
+    <footer>
+        <img src="./assets/BMICLogo-black.png" alt="BMI Calculator logo">
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/e23d1160ae.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/bmi-calculator.js"></script>
+</body>
+</html>
