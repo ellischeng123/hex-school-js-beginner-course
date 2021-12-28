@@ -134,7 +134,7 @@ form p input:first-of-type {
   color: #b1b1b1;
 }
 .result .delete:active {
-  color: #696969;
+  color: #696968;
 }
 
 .result h3, .item h4, .item p, .date {
