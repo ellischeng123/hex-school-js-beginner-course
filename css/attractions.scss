@@ -1,0 +1,212 @@
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+  
+    main {        // background-image: url("../assets/the-urban-landscape-1698285.png")
+      background-image: url("../assets/Hero.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: contain;
+      padding-top: 96px;
+      margin-bottom: 45px;
+  
+      h1 {
+        font-size: 40px;
+        letter-spacing: 5px;
+        text-align: center;
+        color: white;
+      }
+      select {
+        display: block;
+        margin: 72px auto 96px auto;
+        width: 452px;
+        height: 48px;
+        background: rgba(255,255,255,0.70);
+        border: 3px solid #FFFFFF;
+        border-radius: 3px;
+        font-size: 18px;
+        padding: 0px 5px 0px 5px;
+      }
+      .popular-dist {
+        margin: 0 auto;
+        width: 800px;
+        height: 112px;
+        background: #FFFFFF;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+        border-radius: 5px;
+        padding: 20px 128px 16px 28px;
+  
+        h2 {
+          font-size: 20px;
+        }
+        ul {
+          display: flex;
+          margin-top: 12px;
+          justify-content: space-around;
+        }
+        .dist {
+          display: block;
+          text-align: center;
+          text-decoration: none;
+          font-size: 20px;
+          font-weight: 300;
+          padding: 11px 30px;
+          width: 130px;
+          height: 42px;
+          color: white;
+          border-radius: 5px;
+        }
+        .dist-1 {
+          background-color: #8a82cc;
+        }
+        .dist-2 {
+          background-color: #ffa782;
+        }
+        .dist-3 {
+          background-color: #f5d005;
+        }
+        .dist-4 {
+          background-color: #559ac8;
+        }
+      }
+      .divine {
+        margin: 40px auto 0px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border: 2px solid #559AC8;
+        border-radius: 50%;
+        position: relative;
+  
+        &::before {
+          position: absolute;
+          left: -468px;
+          content: "";
+          width: 460px;
+          height: 2px;
+          border-top: 2px dashed rgba(85, 154, 200, 0.5);
+        }
+        &::after {
+          position: absolute;
+          right: -468px;
+          content: "";
+          width: 460px;
+          height: 2px;
+          border-top: 2px dashed rgba(85, 154, 200, 0.5);
+        }
+        img {
+          width: 16px;
+          height: 11px;
+          filter: invert(80%) sepia(30%) saturate(4920%) hue-rotate(175deg) brightness(82%) contrast(89%);
+        }
+      }
+      .result {
+        margin-top: 54px;
+  
+        h3 {
+          text-align: center;
+          font-size: 40px;
+          color: #8A82CC;
+        }
+        .list {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin-top: 36px;
+  
+          .card {
+            width: 464px;
+            height: 273px;
+            box-shadow: 0 1px 3px 0 rgba(0,0,0,0.20);
+            margin-bottom: 40px;
+  
+            .pic {
+              height: 155px;
+              position: relative;
+  
+              h4 {
+                font-size: 24px;
+                font-weight: 300;
+                color: white;
+                position: absolute;
+                left: 18px;
+                bottom: 12px;
+              }
+              p {
+                font-size: 16px;
+                font-weight: 300;
+                color: white;
+                position: absolute;
+                right: 18px;
+                bottom: 12px;
+              }
+              img {
+                width: 100%;
+                object-fit: cover;
+              }
+            }
+            .info {
+              padding: 16px 24px;
+              position: relative;
+  
+              div {
+                font-size: 16px;
+                margin-bottom: 10px;
+  
+                img {
+                  margin-right: 6px;
+                }
+
+                &:nth-of-type(3) {
+                    img {
+                        padding-left: 2px;
+                    }
+                    
+                }
+              }
+              .ticket-info {
+                position: absolute;
+                right: 22px;
+                bottom: 12px;
+
+                img {
+                    padding-right: 6px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    footer {
+      background-color: #559ac8;
+      padding: 20px 0px;
+  
+      .name {
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        margin-bottom: 20px;
+      }
+      .source {
+        color: #ffd366;
+        text-align: center;
+        font-size: 15px;
+      }
+    }
+}
+
+.toTop {
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+}

@@ -1,0 +1,198 @@
+* {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.container main {
+  background-image: url("../assets/Hero.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  padding-top: 96px;
+  margin-bottom: 45px;
+}
+.container main h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+}
+.container main select {
+  display: block;
+  margin: 72px auto 96px auto;
+  width: 452px;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 3px solid #FFFFFF;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 0px 5px 0px 5px;
+}
+.container main .popular-dist {
+  margin: 0 auto;
+  width: 800px;
+  height: 112px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px 128px 16px 28px;
+}
+.container main .popular-dist h2 {
+  font-size: 20px;
+}
+.container main .popular-dist ul {
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-around;
+}
+.container main .popular-dist .dist {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 11px 30px;
+  width: 130px;
+  height: 42px;
+  color: white;
+  border-radius: 5px;
+}
+.container main .popular-dist .dist-1 {
+  background-color: #8a82cc;
+}
+.container main .popular-dist .dist-2 {
+  background-color: #ffa782;
+}
+.container main .popular-dist .dist-3 {
+  background-color: #f5d005;
+}
+.container main .popular-dist .dist-4 {
+  background-color: #559ac8;
+}
+.container main .divine {
+  margin: 40px auto 0px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #559AC8;
+  border-radius: 50%;
+  position: relative;
+}
+.container main .divine::before {
+  position: absolute;
+  left: -468px;
+  content: "";
+  width: 460px;
+  height: 2px;
+  border-top: 2px dashed rgba(85, 154, 200, 0.5);
+}
+.container main .divine::after {
+  position: absolute;
+  right: -468px;
+  content: "";
+  width: 460px;
+  height: 2px;
+  border-top: 2px dashed rgba(85, 154, 200, 0.5);
+}
+.container main .divine img {
+  width: 16px;
+  height: 11px;
+  filter: invert(80%) sepia(30%) saturate(4920%) hue-rotate(175deg) brightness(82%) contrast(89%);
+}
+.container main .result {
+  margin-top: 54px;
+}
+.container main .result h3 {
+  text-align: center;
+  font-size: 40px;
+  color: #8A82CC;
+}
+.container main .result .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 36px;
+}
+.container main .result .list .card {
+  width: 464px;
+  height: 273px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+.container main .result .list .card .pic {
+  height: 155px;
+  position: relative;
+}
+.container main .result .list .card .pic h4 {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  left: 18px;
+  bottom: 12px;
+}
+.container main .result .list .card .pic p {
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  right: 18px;
+  bottom: 12px;
+}
+.container main .result .list .card .pic img {
+  width: 100%;
+  object-fit: cover;
+}
+.container main .result .list .card .info {
+  padding: 16px 24px;
+  position: relative;
+}
+.container main .result .list .card .info div {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.container main .result .list .card .info div img {
+  margin-right: 6px;
+}
+.container main .result .list .card .info div:nth-of-type(3) img {
+  padding-left: 2px;
+}
+.container main .result .list .card .info .ticket-info {
+  position: absolute;
+  right: 22px;
+  bottom: 12px;
+}
+.container main .result .list .card .info .ticket-info img {
+  padding-right: 6px;
+}
+.container footer {
+  background-color: #559ac8;
+  padding: 20px 0px;
+}
+.container footer .name {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 20px;
+}
+.container footer .source {
+  color: #ffd366;
+  text-align: center;
+  font-size: 15px;
+}
+
+.toTop {
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 3%;
+  bottom: 5%;
+}
+
+/*# sourceMappingURL=attractions.css.map */
