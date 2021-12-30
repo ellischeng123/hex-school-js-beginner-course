@@ -97,11 +97,12 @@ renderPopularDists()
 
 // 產生行政區選項自資料集
 function createOptions() {
-    let options = '<option value="">--請選擇行政區--</option>'
+    let options = ''
     for (let i = 0; i < dists.length; i++) {
         options += `<option value="${dists[i]}">${dists[i]}</option>`
     }
     distSelect.innerHTML = options
+    renderAttractions()
 }
 
 createOptions()
