@@ -117,15 +117,15 @@ function saveResult(weight, height, bmi, dateString) {
 function rateBMI(bmi) {
     if (bmi < 18.5) {
         return ["underweight", "過輕"]
-    } else if (bmi <25) {
+    } else if (bmi < 25) {
         return ["ideal", "理想"]
-    } else if (bmi <25) {
+    } else if (bmi < 30) {
         return ["overweight", "過重"]
-    } else if (bmi <30) {
+    } else if (bmi < 35) {
         return ["obese-c1", "輕度肥胖"]
-    } else if (bmi <35) {
+    } else if (bmi < 40) {
         return ["obese-c2", "中度肥胖"]
-    } else if (bmi <40) {
+    } else {
         return ["obese-c3", "重度肥胖"]
     }
 }
@@ -145,7 +145,7 @@ function deleteRecord(e) {
     
     let record = e.target.parentElement
 
-    e.target.parentElement.remove()
+    record.remove()
 
     let records = JSON.parse(localStorage.getItem("records"))
     records.splice(record.dataset.index, 1)

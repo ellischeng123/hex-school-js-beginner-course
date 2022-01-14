@@ -70,7 +70,7 @@ toTop.addEventListener('click', goToTop)
 function renderPopularDists() {
     let popDists = ''
     for (let i = 0; i < 4; i++) {
-        popDists += `<li><a href="#" class="dist dist-${i + 1}" data-dist="${dists[i]}">${dists[i]}</a></li>`
+        popDists += `<li><a href="#" class="dist dist-${i + 1}" data-dist="${dists[i]}">${dists[i+1]}</a></li>`
     }
     popList.innerHTML = popDists
 
